@@ -377,9 +377,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading{
-    border-bottom: 1px solid #e5ebf2;
-}
-.section-heading{
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2; 
 }
