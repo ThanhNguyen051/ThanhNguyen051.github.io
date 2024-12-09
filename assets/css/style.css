@@ -95,6 +95,12 @@ html,body{
 }
 
 .fix{position: relative;clear: both;}
+
+#navbarmenu {
+    transition: 0.4s;
+    position: fixed;
+}
+
 /*=============Style css=========*/
 
 /*-------------------------------------
