@@ -56,9 +56,10 @@
 
 		<script>
 			var prevScrollpos = window.pageYOffset;
-			window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-				document.getElementById("navbarmenu").style.transition.transform = "10s";
+			window.onscroll = function() {navScroll()};
+			function navScroll()
+			{
+				var currentScrollPos = window.pageYOffset;
 				if (prevScrollpos > currentScrollPos) {
 					document.getElementById("navbarmenu").style.top = "0";
 				} else {
@@ -66,6 +67,7 @@
 				}
 				prevScrollpos = currentScrollPos;
 			}
+			
 
 			function enter() {
 				const div = document.getElementById("myDiv");
