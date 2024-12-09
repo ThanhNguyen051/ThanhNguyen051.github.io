@@ -349,7 +349,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.timeline-horizontal-border*/
 .timeline-horizontal-border {
     display:  flex;
-    align-items: right;
+    align-items: center;
     padding: 26px 0 30px;
 }
 .timeline-horizontal-border i {
