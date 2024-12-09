@@ -58,7 +58,7 @@
 			var prevScrollpos = window.pageYOffset;
 			window.onscroll = function() {
 			var currentScrollPos = window.pageYOffset;
-				document.getElementById("navbarmenu").style.transition: all .5s;
+				document.getElementById("navbarmenu").style.transition.transform = ".2s";
 				if (prevScrollpos > currentScrollPos) {
 					document.getElementById("navbarmenu").style.top = "0";
 				} else {
