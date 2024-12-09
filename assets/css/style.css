@@ -348,9 +348,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /*.timeline-horizontal-border*/
 .timeline-horizontal-border {
-    display:  flex;
 
-    padding: 26px 0 30px;
 }
 .timeline-horizontal-border i {
     font-size:  10px;
