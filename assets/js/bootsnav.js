@@ -293,33 +293,33 @@
                 }
                 
                 // Hidden om mouse leave
-                // $("nav.navbar.bootsnav").on("mouseleave", function(){
-                //     cleanOpen();
-                // });
+                $("nav.navbar.bootsnav").on("mouseleave", function(){
+                    cleanOpen();
+                });
                 
                 // Enable click atribute navigation
-                // $("nav.navbar.bootsnav .attr-nav").each(function(){  
-                //     $(".dropdown-menu", this).removeClass("animated");
-                //     $("li.dropdown", this).off("mouseenter");
-                //     $("li.dropdown", this).off("mouseleave");                    
-                //     $("a.dropdown-toggle", this).off('click');
-                //     $("a.dropdown-toggle", this).on('click', function (e) {
-                //         e.stopPropagation();
-                //         $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle();
-                //         $(".navbar-toggle").each(function(){
-                //             $(".fa", this).removeClass("fa-times");
-                //             $(".fa", this).addClass("fa-bars");
-                //             $(".navbar-collapse").removeClass("in");
-                //             $(".navbar-collapse").removeClass("on");
-                //         });
-                //     });
+                $("nav.navbar.bootsnav .attr-nav").each(function(){  
+                    $(".dropdown-menu", this).removeClass("animated");
+                    $("li.dropdown", this).off("mouseenter");
+                    $("li.dropdown", this).off("mouseleave");                    
+                    $("a.dropdown-toggle", this).off('click');
+                    $("a.dropdown-toggle", this).on('click', function (e) {
+                        e.stopPropagation();
+                        $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle();
+                        $(".navbar-toggle").each(function(){
+                            $(".fa", this).removeClass("fa-times");
+                            $(".fa", this).addClass("fa-bars");
+                            $(".navbar-collapse").removeClass("in");
+                            $(".navbar-collapse").removeClass("on");
+                        });
+                    });
                     
-                //     $(this).on("mouseleave", function(){
-                //         $(".dropdown-menu", this).stop().fadeOut();
-                //         $("li.dropdown", this).removeClass("on");
-                //         return false;
-                //     });
-                // });
+                    $(this).on("mouseleave", function(){
+                        $(".dropdown-menu", this).stop().fadeOut();
+                        $("li.dropdown", this).removeClass("on");
+                        return false;
+                    });
+                });
                 
                 // Toggle Bars
                 $(".navbar-toggle").each(function(){
