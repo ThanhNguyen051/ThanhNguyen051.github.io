@@ -234,53 +234,53 @@
                 $(".scroller").css("height", "auto");
                 
                 // Disable mouseenter event
-                $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseenter");
-                $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseleave");
-                $("nav.navbar.bootsnav ul.nav").find(".title").off("mouseenter"); 
-                $("nav.navbar.bootsnav ul.nav").off("mouseleave");    
-                $(".navbar-collapse").removeClass("animated");
+                // $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseenter");
+                // $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseleave");
+                // $("nav.navbar.bootsnav ul.nav").find(".title").off("mouseenter"); 
+                // $("nav.navbar.bootsnav ul.nav").off("mouseleave");    
+                // $(".navbar-collapse").removeClass("animated");
                 
-                // Enable click event
-                $("nav.navbar.bootsnav ul.nav").each(function(){
-                    $(".dropdown-menu", this).addClass("animated");
-                    $(".dropdown-menu", this).removeClass(getOut);
+                // // Enable click event
+                // $("nav.navbar.bootsnav ul.nav").each(function(){
+                //     $(".dropdown-menu", this).addClass("animated");
+                //     $(".dropdown-menu", this).removeClass(getOut);
                     
-                    // Dropdown Fade Toggle
-                    $("a.dropdown-toggle", this).off('click');
-                    $("a.dropdown-toggle", this).on('click', function (e) {
-                        e.stopPropagation();
-                        $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle().toggleClass(getIn);
-                        $(this).closest("li.dropdown").first().toggleClass("on");                        
-                        return false;
-                    });   
+                //     // Dropdown Fade Toggle
+                //     $("a.dropdown-toggle", this).off('click');
+                //     $("a.dropdown-toggle", this).on('click', function (e) {
+                //         e.stopPropagation();
+                //         $(this).closest("li.dropdown").find(".dropdown-menu").first().stop().fadeToggle().toggleClass(getIn);
+                //         $(this).closest("li.dropdown").first().toggleClass("on");                        
+                //         return false;
+                //     });   
                     
-                    // Hidden dropdown action
-                    $('li.dropdown', this).each(function () {
-                        $(this).find(".dropdown-menu").stop().fadeOut();
-                        $(this).on('hidden.bs.dropdown', function () {
-                            $(this).find(".dropdown-menu").stop().fadeOut();
-                        });
-                        return false;
-                    });
+                //     // Hidden dropdown action
+                //     $('li.dropdown', this).each(function () {
+                //         $(this).find(".dropdown-menu").stop().fadeOut();
+                //         $(this).on('hidden.bs.dropdown', function () {
+                //             $(this).find(".dropdown-menu").stop().fadeOut();
+                //         });
+                //         return false;
+                //     });
 
-                    // Megamenu style
-                    $(".megamenu-fw", this).each(function(){
-                        $(".col-menu", this).each(function(){
-                            $(".content", this).addClass("animated");
-                            $(".content", this).stop().fadeOut();
-                            $(".title", this).off("click");
-                            $(".title", this).on("click", function(){
-                                $(this).closest(".col-menu").find(".content").stop().fadeToggle().addClass(getIn);
-                                $(this).closest(".col-menu").toggleClass("on");
-                                return false;
-                            });
+                //     // Megamenu style
+                //     $(".megamenu-fw", this).each(function(){
+                //         $(".col-menu", this).each(function(){
+                //             $(".content", this).addClass("animated");
+                //             $(".content", this).stop().fadeOut();
+                //             $(".title", this).off("click");
+                //             $(".title", this).on("click", function(){
+                //                 $(this).closest(".col-menu").find(".content").stop().fadeToggle().addClass(getIn);
+                //                 $(this).closest(".col-menu").toggleClass("on");
+                //                 return false;
+                //             });
 
-                            $(".content", this).on("click", function(e){
-                                e.stopPropagation();
-                            });
-                        });
-                    });  
-                }); 
+                //             $(".content", this).on("click", function(e){
+                //                 e.stopPropagation();
+                //             });
+                //         });
+                //     });  
+                // }); 
                 
                 // Hidden dropdown
                 var cleanOpen = function(){
