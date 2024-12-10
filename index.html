@@ -63,9 +63,11 @@
 				if (prevScrollpos > currentScrollPos) {
 					document.getElementById("navbarmenu").style.top = "0";
 					document.getElementById("homeButton").style.fontSize = "20px";
+					document.getElementById("homeButton").style.paddingTop = "0";
 				} else {
 					document.getElementById("navbarmenu").style.top = "-50px";
 					document.getElementById("homeButton").style.fontSize = "10px";
+					document.getElementById("homeButton").style.paddingTop = "+10px";
 				}
 				prevScrollpos = currentScrollPos;
 			}
@@ -74,11 +76,13 @@
 			function enter() {
 				document.getElementById("navbarmenu").style.top = "0";
 				document.getElementById("homeButton").style.fontSize = "20px";
+				document.getElementById("homeButton").style.paddingTop = "0";
 			}
 
 			function leave(){
 				document.getElementById("navbarmenu").style.top = "-50px";
 				document.getElementById("homeButton").style.fontSize = "10px";
+				document.getElementById("homeButton").style.paddingTop = "+10px";
 			}
 			</script>
 		<!--[if lte IE 9]>
