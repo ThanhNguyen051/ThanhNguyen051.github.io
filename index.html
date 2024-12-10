@@ -62,8 +62,10 @@
 				var currentScrollPos = window.pageYOffset;
 				if (prevScrollpos > currentScrollPos) {
 					document.getElementById("navbarmenu").style.top = "0";
+					document.getElementById("homeButton").style.fontSize = "0";
 				} else {
 					document.getElementById("navbarmenu").style.top = "-50px";
+					document.getElementById("homeButton").style.fontSize = "-20px";
 				}
 				prevScrollpos = currentScrollPos;
 			}
@@ -71,10 +73,12 @@
 
 			function enter() {
 				document.getElementById("navbarmenu").style.top = "0";
+				document.getElementById("homeButton").style.fontSize = "0";
 			}
 
 			function leave(){
 				document.getElementById("navbarmenu").style.top = "-50px";
+				document.getElementById("homeButton").style.fontSize = "-20px";
 			}
 			</script>
 		<!--[if lte IE 9]>
@@ -94,7 +98,7 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">Thanh Nguyễn</a>
+			                <a class="navbar-brand" id="homeButton" href="index.html">Thanh Nguyễn</a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
@@ -102,7 +106,7 @@
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class="smooth-menu active"></li>
-								<li class="smooth-menu"><a href="#about" onmouseclick="enter()">about me</a></li>
+								<li class="smooth-menu"><a href="#about" onmouseclick="leave()">about me</a></li>
 			                    <li class="smooth-menu"><a href="#education" onmouseclick="leave()">education & skill</a></li>
 			                    <li class="smooth-menu"><a href="#experience" onmouseclick="leave()">experience</a></li>
 			                    <li class="smooth-menu"><a href="#portfolio" onmouseclick="leave()">portfolio</a></li>
