@@ -99,13 +99,13 @@
             // ------------------------------------------------------------------------------ //
             // Navbar Sidebar 
             // ------------------------------------------------------------------------------ //
-            // if( getNav.hasClass("navbar-sidebar")){
-            //     // Add Class to body
-            //     $("body").addClass("wrap-nav-sidebar");
-            //     getNav.wrapInner("<div class='scroller'></div>");
-            // }else{
-            //     $(".bootsnav").addClass("on");
-            // }
+            if( getNav.hasClass("navbar-sidebar")){
+                // Add Class to body
+                $("body").addClass("wrap-nav-sidebar");
+                getNav.wrapInner("<div class='scroller'></div>");
+            }else{
+                $(".bootsnav").addClass("on");
+            }
             
             // ------------------------------------------------------------------------------ //
             // Menu Center 
@@ -234,11 +234,11 @@
                 $(".scroller").css("height", "auto");
                 
                 // Disable mouseenter event
-                $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseenter");
-                $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseleave");
-                $("nav.navbar.bootsnav ul.nav").find(".title").off("mouseenter"); 
-                $("nav.navbar.bootsnav ul.nav").off("mouseleave");    
-                $(".navbar-collapse").removeClass("animated");
+                // $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseenter");
+                // $("nav.navbar.bootsnav ul.nav").find("li.dropdown").off("mouseleave");
+                // $("nav.navbar.bootsnav ul.nav").find(".title").off("mouseenter"); 
+                // $("nav.navbar.bootsnav ul.nav").off("mouseleave");    
+                // $(".navbar-collapse").removeClass("animated");
                 
                 // Enable click event
                 $("nav.navbar.bootsnav ul.nav").each(function(){
