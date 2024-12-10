@@ -47,7 +47,7 @@
                 
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
-					if( $(this).hasClass("active") ){
+					if( $(this).hasClass("actived") ){
 						var getElement = $("a", this).eq(0).text();
 						$(".storage-name").html(getElement);
 					}
@@ -518,8 +518,8 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').removeClass("active");
-                    $(this).addClass("active");
+                    $('.scroll').removeClass("actived");
+                    $(this).addClass("actived");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
