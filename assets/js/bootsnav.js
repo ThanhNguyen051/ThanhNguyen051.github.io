@@ -82,12 +82,12 @@
                 index.find("ul.nav.navbar-right").wrap("<div class='col-half right'></div>");
                 
                 //Selection Class
-                index.find('ul.navbar-nav > li').each(function(){ 
-                    var dropDown = $("ul.dropdown-menu", this),
-                        megaMenu = $("ul.megamenu-content", this);
-                    dropDown.closest("li").addClass("dropdown");
-                    megaMenu.closest("li").addClass("megamenu-fw");
-                });
+                // index.find('ul.navbar-nav > li').each(function(){ 
+                //     var dropDown = $("ul.dropdown-menu", this),
+                //         megaMenu = $("ul.megamenu-content", this);
+                //     dropDown.closest("li").addClass("dropdown");
+                //     megaMenu.closest("li").addClass("megamenu-fw");
+                // });
 				
 				var getName = $(".storage-name").html();
 				if( !getName == ""  ){
