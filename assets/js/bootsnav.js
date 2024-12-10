@@ -579,9 +579,9 @@
     // Reset on resize
     $(window).on("resize", function(){   
         bootsnav.hoverDropdown();
-        // setTimeout(function(){
-        //     bootsnav.navbarSticky();
-        // }, 500);
+        setTimeout(function(){
+            bootsnav.navbarSticky();
+        }, 500);
         
         // Toggle Bars
         $(".navbar-toggle").each(function(){
