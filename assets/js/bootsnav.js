@@ -82,30 +82,30 @@
                 index.find("ul.nav.navbar-right").wrap("<div class='col-half right'></div>");
                 
                 //Selection Class
-                // index.find('ul.navbar-nav > li').each(function(){ 
-                //     var dropDown = $("ul.dropdown-menu", this),
-                //         megaMenu = $("ul.megamenu-content", this);
-                //     dropDown.closest("li").addClass("dropdown");
-                //     megaMenu.closest("li").addClass("megamenu-fw");
-                // });
+                index.find('ul.navbar-nav > li').each(function(){ 
+                    var dropDown = $("ul.dropdown-menu", this),
+                        megaMenu = $("ul.megamenu-content", this);
+                    dropDown.closest("li").addClass("dropdown");
+                    megaMenu.closest("li").addClass("megamenu-fw");
+                });
 				
-				// var getName = $(".storage-name").html();
-				// if( !getName == ""  ){
-				// 	$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
-				// }
+				var getName = $(".storage-name").html();
+				if( !getName == ""  ){
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
+				}
             } 
             
             
             // ------------------------------------------------------------------------------ //
             // Navbar Sidebar 
             // ------------------------------------------------------------------------------ //
-            if( getNav.hasClass("navbar-sidebar")){
-                // Add Class to body
-                $("body").addClass("wrap-nav-sidebar");
-                getNav.wrapInner("<div class='scroller'></div>");
-            }else{
-                $(".bootsnav").addClass("on");
-            }
+            // if( getNav.hasClass("navbar-sidebar")){
+            //     // Add Class to body
+            //     $("body").addClass("wrap-nav-sidebar");
+            //     getNav.wrapInner("<div class='scroller'></div>");
+            // }else{
+            //     $(".bootsnav").addClass("on");
+            // }
             
             // ------------------------------------------------------------------------------ //
             // Menu Center 
