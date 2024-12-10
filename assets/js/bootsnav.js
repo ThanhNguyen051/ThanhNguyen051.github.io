@@ -47,11 +47,11 @@
                 
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
-					if( $(this).hasClass("active") ){
-						var getElement = $("a", this).eq(0).text();
-						$(".storage-name").html(getElement);
-					}
-                    postsArr.push($(this).html());
+					// if( $(this).hasClass("active") ){
+					// 	var getElement = $("a", this).eq(0).text();
+					// 	$(".storage-name").html(getElement);
+					// }
+                    // postsArr.push($(this).html());
                 });
                 
                 //Split the array at this point. The original array is altered.
@@ -518,8 +518,8 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').removeClass("active");
-                    $(this).addClass("active");
+                    // $('.scroll').removeClass("active");
+                    // $(this).addClass("active");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
