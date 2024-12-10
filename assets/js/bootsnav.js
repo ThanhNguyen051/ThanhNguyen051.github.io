@@ -47,7 +47,7 @@
                 
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
-					if( $(this).hasClass("active") ){
+					if( $(this).hasClass("acti") ){
 						var getElement = $("a", this).eq(0).text();
 						$(".storage-name").html(getElement);
 					}
