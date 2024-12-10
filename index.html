@@ -70,13 +70,11 @@
 			
 
 			function enter() {
-				const div = document.getElementById("myDiv");
-				div.style.visibility = "visible";
+				document.getElementById("navbarmenu").style.top = "0";
 			}
 
 			function leave(){
-				const div = document.getElementById("myDiv");
-				div.style.visibility = "hidden";
+				document.getElementById("navbarmenu").style.top = "-50px";
 			}
 			</script>
 		<!--[if lte IE 9]>
@@ -87,7 +85,7 @@
 		<header class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background" id="navbarmenu">
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background" id="navbarmenu" onmouseenter="enter" onmouseleave="leave">
 
 			        <div class="container">
 
