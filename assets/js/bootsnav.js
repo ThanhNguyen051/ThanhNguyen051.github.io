@@ -17,7 +17,7 @@
             this.event();
             this.hoverDropdown();
             this.navbarSticky();
-            this.navbarScrollspy();
+            // this.navbarScrollspy();
         },
         event : function(){
             
@@ -533,7 +533,7 @@
                     // Scroll
                     var scrollTop = $(window).scrollTop(),
                         $anchor = $(this).find('a'),
-                        $section = 0,
+                        $section = $($anchor.attr('href')).offset().top,
                         $window = $(window).width(),
                         $minusDesktop = getNav.data("minus-value-desktop"),
                         $minusMobile = getNav.data("minus-value-mobile"),
