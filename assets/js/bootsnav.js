@@ -47,7 +47,7 @@
                 
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
-					if( $(this).hasClass("test") ){
+					if( $(this).hasClass("active") ){
 						var getElement = $("a", this).eq(0).text();
 						$(".storage-name").html(getElement);
 					}
@@ -91,7 +91,7 @@
 				
 				var getName = $(".storage-name").html();
 				if( !getName == ""  ){
-					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("test");
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
 				}		
             } 
             
@@ -228,7 +228,7 @@
                 getIn = getNav.find("ul.nav").data("in"),
                 getOut = getNav.find("ul.nav").data("out");
             
-            if( getWindow < 991 ){
+            if( getWindow < 1150 ){
                 
                 // Height of scroll navigation sidebar
                 $(".scroller").css("height", "auto");
@@ -331,7 +331,7 @@
                     });
                 });
 
-            }else if( getWindow > 991 ){
+            }else if( getWindow > 1150 ){
                 // Height of scroll navigation sidebar
                 $(".scroller").css("height", getHeight + "px");
                 
@@ -518,8 +518,8 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').removeClass("test");
-                    $(this).addClass("test");
+                    $('.scroll').removeClass("active");
+                    $(this).addClass("active");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
