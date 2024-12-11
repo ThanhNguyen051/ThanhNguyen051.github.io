@@ -533,7 +533,7 @@
                     // Scroll
                     var scrollTop = $(window).scrollTop(),
                         $anchor = $(this).find('a'),
-                        $section = $($anchor.attr('href')).offset().top,
+                        $section = 0,
                         $window = $(window).width(),
                         $minusDesktop = getNav.data("minus-value-desktop"),
                         $minusMobile = getNav.data("minus-value-mobile"),
