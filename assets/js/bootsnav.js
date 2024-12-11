@@ -518,7 +518,7 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').removeClass("active");
+                    $('.scroll').replace("active", "");
                     $(this).addClass("active");
 
                     // Remove navbar collapse
