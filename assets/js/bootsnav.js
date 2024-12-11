@@ -91,7 +91,7 @@
 				
 				var getName = $(".storage-name").html();
 				if( !getName == ""  ){
-					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass(" active");
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
 				}		
             } 
             
@@ -519,7 +519,7 @@
 
                     // Active link
                     $('.scroll').replace("active", "");
-                    $(this).addClass(" active");
+                    $(this).addClass("active");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
