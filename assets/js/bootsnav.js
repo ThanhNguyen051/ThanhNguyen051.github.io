@@ -540,9 +540,9 @@
                         $speed = getNav.data("speed");
                     
                     if( $window > 992 ){
-                        var $position = $section - $minusDesktop - 800;
+                        var $position = $section - $minusDesktop + 800;
                     }else{
-                        var $position = $section - $minusMobile - 800;
+                        var $position = $section - $minusMobile + 800;
                     }             
                         
                     $('html, body').stop().animate({
