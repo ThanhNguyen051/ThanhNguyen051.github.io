@@ -42,7 +42,7 @@
     windowHeight = $window.height(),
     scroller = function() {
       var scrollTop = $window.scrollTop(),
-        documentHeight = $document.height(),
+        documentHeight = $document.height()-1000,
         dwh = documentHeight - windowHeight,
         extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
 
