@@ -539,7 +539,7 @@
                         $minusMobile = getNav.data("minus-value-mobile"),
                         $speed = getNav.data("speed");
                     
-                    if( $window > 992 ){
+                    if( $window > 1150 ){
                         var $position = $section - $minusDesktop;
                     }else{
                         var $position = $section - $minusMobile;
