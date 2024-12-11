@@ -91,7 +91,7 @@
 				
 				var getName = $(".storage-name").html();
 				if( !getName == ""  ){
-					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("test");
 				}		
             } 
             
@@ -518,8 +518,8 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').replace("active", "");
-                    $(this).addClass("active");
+                    $('.scroll').replace("test", "");
+                    $(this).addClass("test");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
