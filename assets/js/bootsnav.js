@@ -47,7 +47,7 @@
                 
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
-					if( $(this).hasClass("acti") ){
+					if( $(this).hasClass("active") ){
 						var getElement = $("a", this).eq(0).text();
 						$(".storage-name").html(getElement);
 					}
@@ -91,7 +91,7 @@
 				
 				var getName = $(".storage-name").html();
 				if( !getName == ""  ){
-					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("actived");
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
 				}		
             } 
             
@@ -518,8 +518,8 @@
                     event.preventDefault();
 
                     // Active link
-                    $('.scroll').removeClass("actived");
-                    $(this).addClass("actived");
+                    $('.scroll').removeClass("active");
+                    $(this).addClass("active");
 
                     // Remove navbar collapse
                     $(".navbar-collapse").removeClass("in");
