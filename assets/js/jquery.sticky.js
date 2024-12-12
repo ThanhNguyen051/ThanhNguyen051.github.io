@@ -41,7 +41,7 @@
     sticked = [],
     windowHeight = $window.height(),
     scroller = function() {
-      var scrollTop = $window.scrollTop(),
+      var scrollTop = $window.scrollTop()-1000,
         documentHeight = $document.height(),
         dwh = documentHeight - windowHeight,
         extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
@@ -63,7 +63,7 @@
                 'top': '',
                 'z-index': ''
               });
-            // s.stickyElement.parent().removeClass(s.className);
+            s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
             s.currentTop = null;
           }
@@ -93,7 +93,7 @@
               .css('top', newTop)
               .css('z-index', s.zIndex);
 
-            // s.stickyElement.parent().addClass(s.className);
+            s.stickyElement.parent().addClass(s.className);
 
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
