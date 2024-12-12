@@ -41,7 +41,7 @@
     sticked = [],
     windowHeight = $window.height(),
     scroller = function() {
-      var scrollTop = $window.scrollTop()-1000,
+      var scrollTop = $window.scrollTop(),
         documentHeight = $document.height(),
         dwh = documentHeight - windowHeight,
         extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
@@ -63,7 +63,7 @@
                 'top': '',
                 'z-index': ''
               });
-            s.stickyElement.parent().removeClass(s.className);
+            // s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
             s.currentTop = null;
           }
@@ -93,7 +93,7 @@
               .css('top', newTop)
               .css('z-index', s.zIndex);
 
-            s.stickyElement.parent().addClass(s.className);
+            // s.stickyElement.parent().addClass(s.className);
 
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
@@ -157,17 +157,17 @@
           var o = $.extend({}, defaults, options);
           var stickyElement = $(this);
 
-          var stickyId = stickyElement.attr('id');
-          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
-          var wrapper = $('<div></div>')
-            .attr('id', wrapperId)
-            .addClass(o.wrapperClassName);
+          // var stickyId = stickyElement.attr('id');
+          // var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
+          // var wrapper = $('<div></div>')
+          //   .attr('id', wrapperId)
+          //   .addClass(o.wrapperClassName);
 
-          stickyElement.wrapAll(function() {
-            if ($(this).parent("#" + wrapperId).length == 0) {
-                    return wrapper;
-            }
-          });
+          // stickyElement.wrapAll(function() {
+          //   if ($(this).parent("#" + wrapperId).length == 0) {
+          //           return wrapper;
+          //   }
+          // });
 
           var stickyWrapper = stickyElement.parent();
 
