@@ -51,8 +51,8 @@ $(document).ready(function(){
 		});
 		
 		$('body').scrollspy({
-			// target:'.navbar-collapse',
-			// offset:0
+			target:'.navbar-collapse',
+			offset:0
 		});
 
 	// 3. Progress-bar
