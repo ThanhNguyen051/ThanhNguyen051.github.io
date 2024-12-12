@@ -76,30 +76,30 @@ $(document).ready(function(){
 		// i. client (carousel)
 		
 			$('#client').owlCarousel({
-				items:7,
-				loop:true,
-				smartSpeed: 1000,
-				autoplay:true,
-				dots:false,
-				autoplayHoverPause:true,
-				responsive:{
-						0:{
-							items:2
-						},
-						415:{
-							items:2
-						},
-						600:{
-							items:4
+				// items:7,
+				// loop:true,
+				// smartSpeed: 1000,
+				// autoplay:true,
+				// dots:false,
+				// autoplayHoverPause:true,
+				// responsive:{
+				// 		0:{
+				// 			items:2
+				// 		},
+				// 		415:{
+				// 			items:2
+				// 		},
+				// 		600:{
+				// 			items:4
 
-						},
-						1199:{
-							items:4
-						},
-						1200:{
-							items:7
-						}
-					}
+				// 		},
+				// 		1199:{
+				// 			items:4
+				// 		},
+				// 		1200:{
+				// 			items:7
+				// 		}
+				// 	}
 				});
 				
 				
@@ -114,13 +114,13 @@ $(document).ready(function(){
     // 5. welcome animation support
 
         $(window).load(function(){
-        // 	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
-        //     $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
-        // });
+        	$(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({'opacity':'0'});
+            $(".header-text a").removeClass("animated fadeInDown").css({'opacity':'0'});
+        });
 
-        // $(window).load(function(){
-        // 	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
-        //     $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
+        $(window).load(function(){
+        	$(".header-text h2,.header-text p").addClass("animated fadeInUp").css({'opacity':'0'});
+            $(".header-text a").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
 });
