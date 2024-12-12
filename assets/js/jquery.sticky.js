@@ -157,17 +157,17 @@
           var o = $.extend({}, defaults, options);
           var stickyElement = $(this);
 
-          var stickyId = stickyElement.attr('id');
-          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
-          var wrapper = $('<div></div>')
-            .attr('id', wrapperId)
-            .addClass(o.wrapperClassName);
+          // var stickyId = stickyElement.attr('id');
+          // var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
+          // var wrapper = $('<div></div>')
+          //   .attr('id', wrapperId)
+          //   .addClass(o.wrapperClassName);
 
-          stickyElement.wrapAll(function() {
-            if ($(this).parent("#" + wrapperId).length == 0) {
-                    return wrapper;
-            }
-});
+          // stickyElement.wrapAll(function() {
+            // if ($(this).parent("#" + wrapperId).length == 0) {
+            //         return wrapper;
+            // }
+          // });
 
           var stickyWrapper = stickyElement.parent();
 
