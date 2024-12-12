@@ -103,12 +103,12 @@ $(document).ready(function(){
 				});
 				
 				
-				$('.play').on('click',function(){
-					owl.trigger('play.owl.autoplay',[1000])
-				})
-				$('.stop').on('click',function(){
-					owl.trigger('stop.owl.autoplay')
-				})
+				// $('.play').on('click',function(){
+				// 	owl.trigger('play.owl.autoplay',[1000])
+				// })
+				// $('.stop').on('click',function(){
+				// 	owl.trigger('stop.owl.autoplay')
+				// })
 
 
     // 5. welcome animation support
