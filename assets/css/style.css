@@ -355,7 +355,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     padding-top:  50px;
 }
 .education-horizontal-timeline {
-    padding: 80px 0;
+    padding: 80px 0 100px;
 }
 
 /*.education-horizontal-timeline*/
@@ -399,6 +399,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading{
+    padding-top: 30px;
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2; 
 }
