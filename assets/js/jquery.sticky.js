@@ -157,11 +157,11 @@
           var o = $.extend({}, defaults, options);
           var stickyElement = $(this);
 
-          // var stickyId = stickyElement.attr('id');
-          // var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
+          var stickyId = stickyElement.attr('id');
+          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName;
           var wrapper = $('<div></div>')
-            // .attr('id', wrapperId)
-            // .addClass(o.wrapperClassName);
+            .attr('id', wrapperId)
+            .addClass(o.wrapperClassName);
 
           stickyElement.wrapAll(function() {
             if ($(this).parent("#" + wrapperId).length == 0) {
