@@ -51,7 +51,7 @@ $(document).ready(function(){
 		});
 		
 		$('body').scrollspy({
-			target:'.navbar-collapse',
+			target:'.navbar-collapse'
 			// offset:0
 		});
 
