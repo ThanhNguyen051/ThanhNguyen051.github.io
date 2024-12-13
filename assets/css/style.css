@@ -152,8 +152,20 @@ nav.navbar.bootsnav ul.nav > li > a {
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li.active>a{color: var(--hl); box-shadow: 0 3px 15px rgba(0,0,0,.3); font-weight: bold;}
+nav.navbar.bootsnav ul.nav > li > a {
+    padding: 35px 20px;
+}
+nav.navbar.bootsnav ul.nav > li > a:hover{
+    color: var(--hl);
+    font-weight: bold;
+    padding: 35px 15px;
+}
+nav.navbar.bootsnav ul.nav > li.active>a {
+    color: var(--hl);
+    box-shadow: 0 3px 15px rgba(0,0,0,.3);
+    font-weight: bold;
+    padding: 35px 15px;
+}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -162,8 +174,20 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: var(--hl); box-shadow: 0 3px 15px rgba(0,0,0,.3); font-weight: bold;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {
+    color:#6a708e;
+}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover{
+    color: var(--hl);
+    font-weight: bold;
+    padding: 35px 15px;
+}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a {
+    color: var(--hl);
+    box-shadow: 0 3px 15px rgba(0,0,0,.3);
+    font-weight: bold;
+    padding: 35px 15px;
+}
 /*.nav li*/
 
 
