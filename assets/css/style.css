@@ -158,7 +158,7 @@ nav.navbar.bootsnav ul.nav > li > a {
 }
 nav.navbar.bootsnav ul.nav > li > a:hover{
     color: var(--hl);
-    text-shadow: 1px 0 black;
+    font-weight: bold;
 }
 nav.navbar.bootsnav ul.nav > li.active>a {
     color: var(--hl);
@@ -179,7 +179,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover{
     color: var(--hl);
-    text-shadow: 1px 0 black;
+    font-weight: bold;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a {
     color: var(--hl);
