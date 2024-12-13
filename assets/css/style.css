@@ -154,6 +154,7 @@ nav.navbar.bootsnav ul.nav > li > a {
 }
 nav.navbar.bootsnav ul.nav > li > a {
     color:#6a708e;
+    letter-spacing: 0.36px;
 }
 nav.navbar.bootsnav ul.nav > li > a:hover{
     color: var(--hl);
@@ -174,6 +175,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {
     color:#6a708e;
+    letter-spacing: 0.36px;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover{
     color: var(--hl);
