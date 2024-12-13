@@ -186,14 +186,6 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 }
 /*.nav li*/
 
-.col-md-2{
-    float: right;
-    width: 16.6667%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
-
 /*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
 .menu-ui-design::-webkit-scrollbar {
