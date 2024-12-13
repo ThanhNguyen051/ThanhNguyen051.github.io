@@ -31,9 +31,9 @@ font-family: 'Poppins', sans-serif;
 }
 :root{
     --bg:#d4ffd9;
-    --hl:#d92cf9;
-    --hd:#b636ff;
-    --hd-hover:#9f00ff;
+    --hl:#39b931;
+    --hd:#329d2b;
+    --hd-hover:#2dbb24;
 }
 
 *{
