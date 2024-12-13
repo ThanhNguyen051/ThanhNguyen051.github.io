@@ -160,14 +160,6 @@ nav.navbar.bootsnav ul.nav > li > a::before{
     overflow: hidden;
     visibility: hidden;
 }
-a::before {
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
 nav.navbar.bootsnav ul.nav > li > a {
     color:#6a708e;
     letter-spacing: 0.36px;
