@@ -357,7 +357,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: var(--hl);}
 --------------------------------------*/
 
 .education {
-    background:  #ebf5fd;
+    background:  var(--bg);
     padding-top:  50px;
 }
 .education-horizontal-timeline {
@@ -630,6 +630,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .portfolio {
     padding:  50px 0 100px;
     border:  1px solid #e5ebf2;
+    background:  var(--bg);
 }
 
 .portfolio-content {padding-top: 100px;}
