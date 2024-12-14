@@ -361,28 +361,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: var(--hl);}
 }
 .about-list-icon ul li a:hover {
     transition: 0.3s linear;
-    font-size: 20px;
+	transform: scale(1.5);
 }
-.about-list-icon ul li a::before{
-    display: block;
-    content: attr(title);
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-}
-
 .about-list-icon ul li a i {
     margin-left: 6px;
-}
-
-.about-list-icon ul li a:hover {
-	transition: 0.2s linear;
-	font-size: 30px;
-	width: 48px;
-	height: 48px;
-	line-height: 46px;
-	text-align: center;
 }
 /*.ab-list-icon */
 
