@@ -363,6 +363,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: var(--hl);}
     transition: 0.3s linear;
     font-size: 20px;
 }
+.about-list-icon ul li a::before{
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
 
 .about-list-icon ul li a i {
     margin-left: 6px;
