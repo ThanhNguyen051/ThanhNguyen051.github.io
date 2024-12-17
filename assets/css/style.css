@@ -705,6 +705,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .5s;
 }
 .isotope-overlay a {
+    display: none;
     color: #fff;
     font-size: 20px;
     text-align: center;
