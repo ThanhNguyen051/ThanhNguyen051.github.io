@@ -167,7 +167,7 @@
             if ($(this).parent("#" + wrapperId).length == 0) {
                     return wrapper;
             }
-});
+          });
 
           var stickyWrapper = stickyElement.parent();
 

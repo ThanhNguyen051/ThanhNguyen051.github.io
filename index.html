@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
         
         <!-- title of site -->
-        <title>Browny</title>
+        <title>Huỳnh Thanh Nguyễn</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
@@ -51,8 +51,38 @@
         <![endif]-->
 
     </head>
-	
+
 	<body>
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {navScroll()};
+			function navScroll()
+			{
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+					document.getElementById("navbarmenu").style.top = "0";
+					document.getElementById("homeButton").style.fontSize = "20px";
+					document.getElementById("homeButton").style.paddingTop = "33px";
+				} else {
+					document.getElementById("navbarmenu").style.top = "-50px";
+					document.getElementById("homeButton").style.fontSize = "15px";
+					document.getElementById("homeButton").style.paddingTop = "57px";
+				}
+				prevScrollpos = currentScrollPos;
+			}
+			
+			function enter() {
+				document.getElementById("navbarmenu").style.top = "0";
+				document.getElementById("homeButton").style.fontSize = "20px";
+				document.getElementById("homeButton").style.paddingTop = "33px";
+			}
+
+			function leave(){
+				document.getElementById("navbarmenu").style.top = "-50px";
+				document.getElementById("homeButton").style.fontSize = "15px";
+				document.getElementById("homeButton").style.paddingTop = "57px";
+			}
+		</script>
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -61,7 +91,7 @@
 		<header class="top-area">
 			<div class="header-area">
 				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background" id="navbarmenu" onmouseenter="enter()" onmouseleave="leave()">
 
 			        <div class="container">
 
@@ -70,21 +100,19 @@
 			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 			                    <i class="fa fa-bars"></i>
 			                </button>
-			                <a class="navbar-brand" href="index.html">browny</a>
+			                <a class="navbar-brand" id="homeButton" href="index.html">Thanh Nguyễn</a>
 			            </div><!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
 			            <!-- Collect the nav links, forms, and other content for toggling -->
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                    <li class=" smooth-menu"><a href="#education">education</a></li>
-			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
-			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
-			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#clients">clients</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                <li class="smooth-menu active"></li>
+								<li class="smooth-menu"><a href="#about" title="Aboutme" onclick="leave()">about me</a></li>
+			                    <li class="smooth-menu"><a href="#education" title="education & skills" onclick="leave()">education & skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience" title="experience" onclick="leave()">experience</a></li>
+			                    <li class="smooth-menu"><a href="#portfolio" title="portfolio" onclick="leave()">portfolio</a></li>
+			                    <li class="smooth-menu"><a href="#contact" title="contact" onclick="leave()">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -103,8 +131,8 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> browny <br> star <span>.</span>   </h2>
-							<p>ui/ux designer and web developer</p>
+							<h2>hi<span>,</span> i am <br> Thanh Nguyễn <span>.</span>   </h2>
+							<p>Game developer</p>
 							<a href="assets/download/browney.txt" download>download resume</a>
 						</div><!--/.header-text-->
 					</div><!--/.col-->
@@ -125,28 +153,22 @@
 						<div class="col-sm-6">
 							<div class="single-about-txt">
 								<h3>
-									I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.
+									I am a Fresher Game developer with 1 year experience self-developed and freelancer
 								</h3>
 								<p>
-									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,
+									Still learning and developing myself, because there are still many mistakes, I will be ready to listen and accept opinions. In addition to being a programmer, I also participate in many community activities, I can be considered a part-time extrovert. I am confident that I am the most cheerful and sociable person.
 								</p>
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>phone</h3>
-											<p>987-123-6547</p>
+											<p>0829 593 254</p>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>email</h3>
-											<p>browny@info.com</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>website</h3>
-											<p>www.brownsine.com</p>
+											<p>huynhthanhnguyenct2001@gmail.com</p>
 										</div>
 									</div>
 								</div>
@@ -158,29 +180,22 @@
 								<div class="about-list-icon">
 									<ul>
 										<li>
-											<a href="#">
+											<a href="https://www.facebook.com/huynhthanksss">
 												<i  class="fa fa-facebook" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="#">
-												<i  class="fa fa-dribbble" aria-hidden="true"></i>
+											<a href="mailto:huynhthanhnguyenct2001@gmail.com">
+												<i  class="fa fa-envelope" aria-hidden="true"></i>
 											</a>
-											
 										</li><!-- / li -->
 										<li>
-											<a href="#">
-												<i  class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-											
-										</li><!-- / li -->
-										<li>
-											<a href="#">
+											<a href="https://www.linkedin.com/in/thanh-nguy%E1%BB%85n-hu%E1%BB%B3nh-851397320/">
 												<i  class="fa fa-linkedin" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
 										<li>
-											<a href="#">
+											<a href="https://www.instagram.com/hthankss/">
 												<i  class="fa fa-instagram" aria-hidden="true"></i>
 											</a>
 										</li><!-- / li -->
@@ -197,11 +212,11 @@
 			</div>
 		</section><!--/.about-->
 		<!--about end -->
-		
+
 		<!--education start -->
 		<section id="education" class="education">
 			<div class="section-heading text-center">
-				<h2>education</h2>
+				<h2>education & skills</h2>
 			</div>
 			<div class="container">
 				<div class="education-horizontal-timeline">
@@ -209,8 +224,8 @@
 						<div class="col-sm-4">
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
-									<h2>2008 - 2010</h2>
-									<h3>master <span>of </span> computer science</h3>
+									<h2>2019-2024</h2>
+									<h3>Software engineering</h3>
 								</div><!--/.experience-time-->
 								<div class="timeline-horizontal-border">
 									<i class="fa fa-circle" aria-hidden="true"></i>
@@ -219,61 +234,46 @@
 								<div class="timeline">
 									<div class="timeline-content">
 										<h4 class="title">
-											university of north carolina
+											Can Tho university
 										</h4>
-										<h5>north carolina, USA</h5>
+										<h5>Can Tho</h5>
 										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+											The course lasts 4.5 years. Graduated with a GPA of 2.82
 										</p>
 									</div><!--/.timeline-content-->
 								</div><!--/.timeline-->
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="single-horizontal-timeline">
-								<div class="experience-time">
-									<h2>2004 - 2008</h2>
-									<h3>bachelor <span>of </span> computer science</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal"></span>
-								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											university of north carolina
-										</h4>
-										<h5>north carolina, USA</h5>
-										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
-							</div>
+							
 						</div>
 						<div class="col-sm-4">
 							<div class="single-horizontal-timeline">
 								<div class="experience-time">
-									<h2>2004 - 2008</h2>
-									<h3>bachelor <span>of </span> creative design</h3>
-								</div><!--/.experience-time-->
-								<div class="timeline-horizontal-border">
-									<i class="fa fa-circle" aria-hidden="true"></i>
-									<span class="single-timeline-horizontal spacial-horizontal-line
-									"></span>
+									<h2 style = "text-align: right">Technologies I know</h2>
+									<h3 style = "text-align: right">&nbsp;</h3> 
 								</div>
-								<div class="timeline">
-									<div class="timeline-content">
-										<h4 class="title">
-											university of bolton
-										</h4>
-										<h5>bolton, united kingdome</h5>
-										<p class="description">
-											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-										</p>
-									</div><!--/.timeline-content-->
-								</div><!--/.timeline-->
+								<div class="timeline-horizontal-border">
+									<span class="single-timeline-horizontal" style="margin-right:5px"></span>
+									<i class="fa fa-circle" style = "float: right" aria-hidden="true"></i>
+								</div>
+								<div class="timeline-content">
+									<div class="col-sm-4"></div>
+									<div class="col-sm-4">
+										<div style = "text-align: right">
+											<h4 class="title">Unity</h4></br>
+											<h4 class="title">.Net</h4></br>
+											<h4 class="title">JavaScript</h4></br>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div style = "text-align: right">
+											<h4 class="title">C#</h4></br>
+											<h4 class="title">Python</h4></br>
+											<h4 class="title">C++</h4></br>
+										</div>
+									</div>
+								</div><!--/.timeline-content-->
 							</div>
 						</div>
 					</div>
@@ -282,117 +282,6 @@
 
 		</section><!--/.education-->
 		<!--education end -->
-
-		<!--skills start -->
-		<section id="skills" class="skills">
-				<div class="skill-content">
-					<div class="section-heading text-center">
-						<h2>skills</h2>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">adobe photoshop</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													  
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">adobe illustrator</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">adobe after effects</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">sketch</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="single-skill-content">
-									<div class="barWrapper">
-										<span class="progressText">html 5</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-													
-												</div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">css 3 animation</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>85%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText">communication</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
-												   
-											   </div>
-											</div>
-											<h3>97%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-									<div class="barWrapper">
-										<span class="progressText"> creativity</span>
-										<div class="single-progress-txt">
-											<div class="progress ">
-											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
-												    
-											   </div>
-											</div>
-											<h3>90%</h3>	
-										</div>
-									</div><!-- /.barWrapper -->
-								</div>
-							</div>
-						</div><!-- /.row -->
-					</div>	<!-- /.container -->		
-				</div><!-- /.skill-content-->
-
-		</section><!--/.skills-->
-		<!--skills end -->
 
 		<!--experience start -->
 		<section id="experience" class="experience">
@@ -408,8 +297,8 @@
 										<div class="row">
 											<div class="col-md-5">
 												<div class="experience-time text-right">
-													<h2>2018 - Present</h2>
-													<h3>creative director</h3>
+													<h2>Present</h2>
+													<h3>freelancer and self-developed</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -417,11 +306,11 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
+															Remote
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Kien Giang</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															Work as a freelancer, get online jobs to support and guide students to do projects, as well as do personal projects. Evaluate and develop myself.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -437,20 +326,22 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2016 - 2018
+														8/2023 - 1/2024
 													</h2>
-													<h3>associate design director</h3>
+													<h3>Racing game - personal project</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-5">
 												<div class="timeline">
 													<div class="timeline-content text-right">
 														<h4 class="title">
-															hoplony tech limited
+															Graduation thesis
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Can Tho</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															Description: Personal project are included in the Graduation thesis. Build a 3D demo game, marathon-inspired gameplay.
+															Technology: Unity (C#), Github, PlayFab.
+															Personal project.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -459,9 +350,9 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2016 - 2018
+														8/2023 - 1/2024
 													</h2>
-													<h3>associate design director</h3>
+													<h3>Subject at university</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 										</div>
@@ -473,8 +364,8 @@
 										<div class="row">
 											<div class="col-md-5">
 												<div class="experience-time text-right">
-													<h2>2013 - 2016</h2>
-													<h3>senior UI/UX designer</h3>
+													<h2>8/2023 - 1/2024</h2>
+													<h3>Subject at university</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -482,11 +373,13 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
+															Platform game Project
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Can Tho</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															Description: The project is part of the specialized essays. Build demo pixels game.
+															Technology: Unity (C#), Github, Aseprite.
+															Perform in groups of 3 people.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -502,20 +395,20 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2012 - 2013
+														6/2023 - 8/2023
 													</h2>
-													<h3>UI/UX designer</h3>
+													<h3>Data administrator intern</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-5">
 												<div class="timeline">
 													<div class="timeline-content text-right">
 														<h4 class="title">
-															hoplony tech limited
+															MKP Food Company Limited
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>Can Tho</h5>
 														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
+															Research and learn about the company's data management software.
 														</p>
 													</div><!--/.timeline-content-->
 												</div><!--/.timeline-->
@@ -524,42 +417,14 @@
 												<div class="experience-time">
 													<h2>
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-														2012 - 2013
+														6/2023 - 8/2023
 													</h2>
-													<h3>UI/UX designer</h3>
+													<h3>Data administrator intern</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 										</div>
 									</div><!--/.single-timeline-box-->
 								</li>
-
-								<li>
-									<div class="single-timeline-box fix">
-										<div class="row">
-											<div class="col-md-5">
-												<div class="experience-time text-right">
-													<h2>2010 - 2012</h2>
-													<h3>frontend developer</h3>
-												</div><!--/.experience-time-->
-											</div><!--/.col-->
-											<div class="col-md-offset-1 col-md-5">
-												<div class="timeline">
-													<div class="timeline-content">
-														<h4 class="title">
-															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
-														</h4>
-														<h5>newyork, USA</h5>
-														<p class="description">
-															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
-														</p>
-													</div><!--/.timeline-content-->
-												</div><!--/.timeline-->
-											</div><!--/.col-->
-										</div>
-									</div><!--/.single-timeline-box-->
-								</li>
-
 							</ul>
 						</div><!--.main-timeline-->
 					</div><!--.experience-content-->
@@ -569,7 +434,7 @@
 		<!--experience end -->
 
 		<!--profiles start -->
-		<section id="profiles" class="profiles">
+<!--		<section id="profiles" class="profiles">
 			<div class="profiles-details">
 				<div class="section-heading text-center">
 					<h2>profiles</h2>
@@ -697,7 +562,7 @@
 				</div>
 			</div>
 
-		</section><!--/.profiles-->
+		</section>--><!--/.profiles-->
 		<!--profiles end -->
 
 		<!--portfolio start -->
@@ -734,9 +599,8 @@
 									<div class="item">
 										<img src="assets/images/portfolio/p3.jpg" alt="portfolio image"/>
 										<div class="isotope-overlay">
-											<a href="#">
-												web design
-											</a>
+											<a href="assets/download/CarPaking.apk"><i  class="fa fa-envelope" aria-hidden="true"></i>Carparking</a>
+											<a href="assets/download/Carpaking.rar">Carparking</a>
 										</div><!-- /.isotope-overlay -->
 									</div><!-- /.item -->
 								</div><!-- /.col -->
@@ -767,58 +631,6 @@
 
 		</section><!--/.portfolio-->
 		<!--portfolio end -->
-
-		<!--clients start -->
-		<section id="clients" class="clients">
-			<div class="section-heading text-center">
-				<h2>clients</h2>
-			</div>
-			<div class="clients-area">
-				<div class="container">
-					<div class="owl-carousel owl-theme" id="client">
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c1.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c2.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c3.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c4.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c5.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c6.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-						<div class="item">
-							<a href="#">
-								<img src="assets/images/clients/c7.png" alt="brand-image" />
-							</a>
-						</div><!--/.item-->
-					</div><!--/.owl-carousel-->
-				</div><!--/.container-->
-			</div><!--/.clients-area-->
-
-		</section><!--/.clients-->
-
-		</section><!--/.clients-->
-		<!--clients end -->
 
 		<!--contact start -->
 		<section id="contact" class="contact">
@@ -873,17 +685,17 @@
 							<div class="single-contact-box">
 								<div class="contact-adress">
 									<div class="contact-add-head">
-										<h3>browny star</h3>
+										<h3>Thanh Nguyễn star</h3>
 										<p>uI/uX designer</p>
 									</div>
 									<div class="contact-add-info">
 										<div class="single-contact-add-info">
 											<h3>phone</h3>
-											<p>987-123-6547</p>
+											<p>0829 593 254</p>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>email</h3>
-											<p>browny@info.com</p>
+											<p>huynhthanhnguyenct2001@gmail.com</p>
 										</div>
 										<div class="single-contact-add-info">
 											<h3>website</h3>
