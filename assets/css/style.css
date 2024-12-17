@@ -688,7 +688,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height:100%;
     width:100%;
     background:rgba(31,44,108,.5);
-    display:flex;
+    display:grid;
     align-items:center;
     text-transform: uppercase;
     justify-content:center;
@@ -705,7 +705,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .5s;
 }
 .isotope-overlay a {
-    display: none;
+    display: inline-block;
     color: #fff;
     font-size: 20px;
     text-align: center;
