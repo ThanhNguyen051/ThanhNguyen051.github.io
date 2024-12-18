@@ -720,6 +720,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     text-align: center;
 }
+.isotope-overlay p {
+    border-style: groove;
+    border-width: 20px;
+    justify-content:center;
+}
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
