@@ -735,7 +735,8 @@ image.imgCenter{
     width: 50%;
     height: 50%;
     display: block;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
