@@ -710,6 +710,16 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     text-align: center;
 }
+.isotope-overlay h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.isotope-overlay h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
     -moz-transform:scale(1);
