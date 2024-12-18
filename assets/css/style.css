@@ -706,7 +706,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .isotope-overlay a {
     display: inline-block;
-    color: #fff;
+    color: #143d00;
     font-size: 20px;
     text-align: center;
 }
@@ -721,9 +721,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-align: center;
 }
 .isotope-overlay p {
-    border-style: groove;
-    border-width: 20px;
-    justify-content:center;
+	border-style: solid;
+	border-radius: 10px;
+    text-align: center;
+	background-color: #97ff63;
+	border-color: #143d00;
+}
+.isotope-overlay p:hover, .isotope-overlay p:active {
+	background-color: #4cc212;
 }
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
