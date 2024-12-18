@@ -705,10 +705,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .5s;
 }
 .isotope-overlay a {
+	text-transform: capitalize;
     display: inline-block;
     color: #143d00;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: #97ff63;
+	border-color: #143d00;
+	padding: 15px;
+	transition: 0.7s;
+}
+.isotope-overlay a:hover, .isotope-overlay a:active {
+	background-color: #4cc212;
 }
 .isotope-overlay h3 {
     color: #fff;
@@ -719,16 +729,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     color: #fff;
     font-size: 20px;
     text-align: center;
-}
-.isotope-overlay p {
-	border-style: solid;
-	border-radius: 10px;
-    text-align: center;
-	background-color: #97ff63;
-	border-color: #143d00;
-}
-.isotope-overlay p:hover, .isotope-overlay p:active {
-	background-color: #4cc212;
 }
 .isotope .item:hover .isotope-overlay{
     -webkit-transform:scale(1);
