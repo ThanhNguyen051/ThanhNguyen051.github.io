@@ -712,13 +712,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     text-align: center;
 	border-style: solid;
 	border-radius: 10px;
-	background-color: #97ff63;
-	border-color: #143d00;
+	background-color: #63c732;
+	border-color: #63c732;
 	padding: 15px;
 	transition: 0.7s;
 }
 .isotope-overlay a:hover, .isotope-overlay a:active {
-	background-color: #4cc212;
+	background-color: #bcff9b;
 }
 .isotope-overlay h3 {
     color: #fff;
