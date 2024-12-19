@@ -780,8 +780,8 @@ img.imgCenter{
 .contact-form .form-control {
     padding: 25px;
     font-size: 14px;
-    border: 1px solid #fff;
-    border-radius: 2px;
+    border: 1px solid #3c763d;;
+    border-radius: 10px;
     box-shadow: none;
     outline: 0!important;
     background: #fff;
@@ -799,6 +799,7 @@ img.imgCenter{
     margin-top: 3px;
     background: var(--hd);
     border: 1px solid var(--hd);
+    border-radius: 10px;
     cursor:pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
      -webkit-transition: .5s; 
